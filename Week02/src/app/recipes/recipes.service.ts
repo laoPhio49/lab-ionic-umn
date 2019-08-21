@@ -39,4 +39,13 @@ export class RecipesService {
             })
         };
     }
+
+    deleteRecipe(recipeId: string){
+        for(let i=0; i< this.recipes.length; i++){
+            if(this.recipes[i].id === recipeId){
+                this.recipes.splice(i, 1);
+                i--;
+            }
+        }
+    }
 }
