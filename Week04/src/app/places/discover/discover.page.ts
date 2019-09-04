@@ -13,10 +13,11 @@ export class DiscoverPage implements OnInit {
   constructor(private placesService: PlacesService) { }
 
   ngOnInit() {
+    this.loadedPlaces = this.placesService.getAllPlaces();
   }
 
   ionViewWillEnter(){
-    this.loadedPlaces = this.placesService.getAllPlaces();
+    
     console.log(this.loadedPlaces);
   }
 
