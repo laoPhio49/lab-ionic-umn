@@ -9,11 +9,11 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item lines="none" [routerLink]="['/places/tabs/discover/']">
+        <ion-item lines="none" [routerLink]="['/places/tabs/discover/']" (click)="menuClose()">
           <ion-icon name="business" slot="start"></ion-icon>
           <ion-label>Discover Places</ion-label>
         </ion-item>
-        <ion-item lines="none" [routerLink]="['/bookings/']">
+        <ion-item lines="none" [routerLink]="['/bookings/']" (click)="menuClose()">
           <ion-icon name="checkbox-outline" slot="start"></ion-icon>
           <ion-label>Your Bookings</ion-label>
         </ion-item>
