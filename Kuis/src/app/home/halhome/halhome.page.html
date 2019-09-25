@@ -1,0 +1,16 @@
+
+<ion-content padding>
+    <ion-list>
+        <ion-card *ngFor = "let ukm of loadedUkm">
+            <ion-item>
+                <ion-label>
+                    <h2>{{ ukm.title }}</h2>
+                    <p>{{ ukm.description }}</p>
+                </ion-label>
+                <ion-button slot="end" (click)="onJoin(ukm)">
+                    Join
+                </ion-button>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+</ion-content>
